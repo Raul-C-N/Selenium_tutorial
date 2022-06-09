@@ -23,3 +23,9 @@ driver.quit()
 
 #encontra elemento por id
 search = driver.find_element_by_id("input")
+
+#encontra a caixa de busca no site pelo nome 
+search = driver.find_element_by_name("")
+
+#insere uma informação
+search.send_keys("test")
