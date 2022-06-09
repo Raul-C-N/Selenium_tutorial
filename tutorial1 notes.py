@@ -1,5 +1,4 @@
 from webbrowser import Chrome
-from webbrowser import Chrome
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -11,11 +10,16 @@ driver = webdriver.Chrome(PATH)
 
 # Abre a página selecionada nos parênteses
 driver.get("https://techwithtim.net")
+driver.get("https://www.google.com")
 
-#imprime título da página
+# Imprime o título da página
 print(driver.title)
 
-search = driver.find_element_by_name("s")
+#Fecha a aba
+driver.close()
 
-#Fecha o navegador
+#fecha o navegador
 driver.quit()
+
+#encontra elemento por id
+search = driver.find_element_by_id("input")
